@@ -1,7 +1,9 @@
 import discord
 from discord.ext import commands
 from random import randint
-from ./ww.gitignore
+
+with open('.gitignore', 'r') as file:
+    token = file.read().strip()
 
 client = commands.Bot(command_prefix='!', description="by/par gabsintchoust")  
 
