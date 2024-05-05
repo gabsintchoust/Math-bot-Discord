@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 from random import randint
+from ./ww.gitignore
 
 client = commands.Bot(command_prefix='!', description="by/par gabsintchoust")  
 
@@ -23,4 +24,4 @@ async def randomaster(ctx):
 
 client.add_command(randomaster)
 
-.gitignore client.run('1236670602253832262')
+client.run(token)
