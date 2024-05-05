@@ -24,8 +24,7 @@ async def randomaster(ctx):
     result = randeum()
     await ctx.send(result)
 
-client.add_command(randomaster)
-
+@client.command(description="Génère un lien d'invitation pour inviter le bot sur un serveur")
 async def invite(ctx):
     permissions = discord.Permissions().all()
     oauth_url = discord.utils.oauth_url(client.user.id, permissions=permissions)
